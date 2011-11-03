@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/chembst
+# catalog-date 2008-09-20 13:36:26 +0200
+# catalog-license lppl
+# catalog-version 0.2.5
 Name:		texlive-chembst
 Version:	0.2.5
 Release:	1
@@ -54,6 +60,7 @@ German should be cited simultaneously.
 #- source
 %doc %{_texmfdistdir}/source/latex/chembst/chembst.dtx
 %doc %{_texmfdistdir}/source/latex/chembst/chembst.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +71,5 @@ German should be cited simultaneously.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
