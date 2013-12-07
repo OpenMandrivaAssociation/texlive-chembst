@@ -6,7 +6,7 @@
 # catalog-version 0.2.5
 Name:		texlive-chembst
 Version:	0.2.5
-Release:	5
+Release:	6
 Summary:	A collection of BibTeX files for chemistry journals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/chembst
